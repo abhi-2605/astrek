@@ -351,3 +351,8 @@ img {
     margin-left: 75px;
     font-size: 30px;
 }
+
+.vr{
+    border-radius: 5px;
+    border-left-style: solid;
+}
