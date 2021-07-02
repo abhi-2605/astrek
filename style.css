@@ -354,5 +354,13 @@ img {
 
 .vr{
     border-radius: 5px;
-    border-left-style: solid;
+    border-right-width: 5px;
+    margin-right: 0%;
+}
+
+.no-padding-margin{
+    background: url('./Assets/images/bg-img.png') no-repeat bottom center/cover;
+    position: relative;
+    padding:0px;
+    margin:0px;
 }
