@@ -84,6 +84,11 @@ a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
+/* .carouselClass{
+    padding-left: 0; padding-right: 0; margin-left:0; margin-right:0; width: 100%;
+} */
+
+/*****************************************BREAKPOINT BEGINS******************************************/
 @media (max-width: 700px) {
     .pretty-big{
         font-size: 15px ;
@@ -102,17 +107,16 @@ a, a:visited, a:hover, a:active {
         justify-content: center;
         text-align: left;
         margin: auto;
-    }
-
-    
+    }   
 }
+/*****************************************BREAKPOINT ENDS****************************************/
 
 .icon-bar {
     position: fixed;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-30%);
 }
 
 .icon-bar a {
