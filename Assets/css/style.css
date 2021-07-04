@@ -23,6 +23,12 @@
     height:100%;
 }
 
+.page-footer{
+    margin-top: 5%;
+    background-color: 6c757d;
+    border-top: 2px solid black;
+}
+
 @media (max-width: 700px) {
     .pretty-big{
         font-size: 15px ;
