@@ -15,162 +15,200 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark navbar-nav ml-auto">
-        <div class="container ">
-            <h1 class="logo" style="color: #fff"> 
-                <img src="./Assets/images/logo-dark.png" style="height:50%" srcset="" alt="Astrek UnikExo">
-            </h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto" style="margin-right: 0;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">CONTACT US</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="icon-bar">
-        <a href="#" class="facebook soc"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="twitter soc"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="google soc"><i class="fa fa-google"></i></a>
-        <a href="#" class="linkedin soc"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="youtube soc"><i class="fa fa-youtube"></i></a>
-        <a id="hide" href="javascript:hideSoc()" onClick="hideSoc()" class="hide"><i class="bi bi-arrow-left"></i></a>
-        <a id="hide" href="javascript:showSoc()" onClick="showSoc()" class="show"><i class="bi bi-arrow-right"></i></a>
-    </div>
 
-    <a href="#contact" class="float">
-       <h1><i class="bi bi-question-circle"></i></h1> 
-    </a>
-
-    <div class="image-bg" id="home">
-        <div class="overlay">
-            <div class="image-bg-inner">
-                <h1>UnikExo</h1> <br>
-                <p>Removing the 'Dis' from 'Disabled'</p>
-            </div>
-        </div>
-    
-    </div>
-    <br>
-    <div class="container" id="about">
-        <div class="row">
-            <div class="col-sm-6">
-                <h1>ABOUT</h1>
-                <br>
-                <p class="pretty-big">
-                    Astrek’s Unik EXO is a fully automated, smart wearable robotic suit
-                    designed to assist people ghting lower limb locomotor
-                    disabilities. UnikXO provides a safe and secure platform for daily
-                    walking assistance in your workplace, homes and even if you want
-                    to go grocery shopping or take a stroll in the garden. 
-                    <br><br>
-
-                    It is also a great tool to help perform your gait therapies and
-                    training exercises with multiple modes of operation, patient
-                    monitoring systems, comprehensive data visualization system and
-                    much more advanced features.
-                    <br><br>
-
-                    Currently under development, UnikXO would be our showstopper
-                    innovation in the near future. Keep an eye out here to know more.
-                </p>
-            </div>
-            <div class="col-sm-6">
-                <img class="img2" width="100%" src="./Assets/images/wheelchair.png" alt="UnikExo" srcset="">
-            </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-nav ml-auto">
+    <div class="container ">
+        <h1 class="logo" style="color: #fff"> 
+            <img src="./Assets/images/logo-dark.png" style="height:50%" srcset="" alt="Astrek UnikExo">
+        </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto" style="margin-right: 0;">
+                <li class="nav-item">
+                    <a class="nav-link active" id="homeBtn" aria-current="page" href="javascript:void(0)">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="aboutBtn" href="javascript:void(0)">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contactBtn" href="javascript:void(0)">CONTACT US</a>
+                </li>
+            </ul>
         </div>
     </div>
+</nav>
+<!-- NAVBAR ENDS-->
 
-    <br><br>
+<!-- SOCIAL ICONS -->
+<div class="icon-bar">
+    <a href="#" class="facebook soc"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="twitter soc"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="google soc"><i class="fa fa-google"></i></a>
+    <a href="#" class="linkedin soc"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="youtube soc"><i class="fa fa-youtube"></i></a>
+    <a id="hide" href="javascript:void(0)" onClick="hideSoc()" class="hide"><i class="bi bi-arrow-left"></i></a>
+    <a id="show" href="javascript:void(0)" onClick="showSoc()" class="show"><i class="bi bi-arrow-right"></i></a>
+</div>
+<!-- SOCIAL ICONS END-->
 
-    <div id="contact" class="container" >
-        
-        <div class="row">
-            <h1>CONTACT US</h1>
-            <br> <br>
-            <!-- Map goes here -->
-            <div class="col-sm-5">
-                <iframe class="maps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.529897019841!2d76.3522350147946!3d10.055595792813042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c04d1fa5823%3A0x89ec69fb9b959600!2sMaker%20Village!5e0!3m2!1sen!2sin!4v1598797390990!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<!-- FLOATING CONTACT BUTTON -->
+<a id="queryBtn" href="javascript:void(0)" class="float">
+    <h1 id="qnMark" style="color:#fff"><i class="bi bi-question-circle"></i></h1> 
+</a>
+<!-- FLOATING CONTACT BUTTON ENDS-->
+
+<!-- HOME -->
+<div class="image-bg" id="home">
+    <div class="overlay">
+        <div class="image-bg-inner">
+            <h1>UnikExo</h1> <br>
+            <p>Removing the 'Dis' from 'Disabled'</p>
+        </div>
+    </div>
+</div>
+<!-- HOME ENDS -->
+
+<br>
+
+<!-- ABOUT STARTS -->
+<div class="container" id="about">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>ABOUT</h1>
+            <br>
+            <p class="pretty-big">
+                Astrek’s Unik EXO is a fully automated, smart wearable robotic suit
+                designed to assist people ghting lower limb locomotor
+                disabilities. UnikXO provides a safe and secure platform for daily
+                walking assistance in your workplace, homes and even if you want
+                to go grocery shopping or take a stroll in the garden. 
+                <br><br>
+
+                It is also a great tool to help perform your gait therapies and
+                training exercises with multiple modes of operation, patient
+                monitoring systems, comprehensive data visualization system and
+                much more advanced features.
+                <br><br>
+
+                Currently under development, UnikXO would be our showstopper
+                innovation in the near future. Keep an eye out here to know more.
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <img class="img2" width="100%" src="./Assets/images/wheelchair.png" alt="UnikExo" srcset="">
+        </div>
+    </div>
+</div>
+<!-- ABOUT ENDS -->
+
+<br><br>
+
+<!-- FEATURES CONTAINER AND CAROUSEL -->
+<div class="container">
+    <div class="row">
+        <h1>Features</h1>
+    </div>
+</div>
+<div class="row" style="padding-left: 0; padding-right: 0; margin-left:0; margin-right:0; width: 100%;">
+    <!-- CAROUSEL START -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+            <img class="d-block w-100" src="./Assets/images/carousel-item1.png" alt="Image 1">
             </div>
-
-            <!-- Separator -->
-            <div class="vertical-line col-sm-1">
+            <div class="carousel-item">
+            <img class="d-block w-100" src="./Assets/images/carousel-item2.png" alt="Image 2">
             </div>
-            <!-- Separator -->
+            <div class="carousel-item">
+            <img class="d-block w-100" src="./Assets/images/carousel-item3.png" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="./Assets/images/carousel-item4.png" alt="Image 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- CAROUSEL END -->
+</div>
+<!-- FEATURES CONTAINER AND CAROUSEL ENDS-->
 
-            <div class="col-sm-5">
-                <div class="form-body">
-                    <div class="row">
-                        <div class="form-holder">
-                            <div class="form-content">
-                                <div class="form-items">
-                                    <h3>Have a query ?</h3>
-                                    <p>Contact us now.</p>
-                                    <form class="requires-validation" novalidate>
-            
-                                        <div class="col-md-12">
-                                            <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
-                                             <div class="valid-feedback">Email field is valid!</div>
-                                             <div class="invalid-feedback">Email field cannot be blank!</div>
-                                        </div>
-                                        <br> 
-                                       <div class="col-md-12">
-                                          <input class="form-control" type="text" placeholder="Question" required>
-                                       </div>
-            
-                       
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                      <label class="form-check-label">I confirm that all data are correct</label>
-                                     <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+<br><br>
+
+<!-- CONTACT CONTAINER -->
+<div id="contact" class="container" >
+    <div class="row">
+        <h1>CONTACT US</h1>
+        <br> <br>
+        <!-- Map goes here -->
+        <div class="col-sm-5">
+            <iframe class="maps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.529897019841!2d76.3522350147946!3d10.055595792813042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c04d1fa5823%3A0x89ec69fb9b959600!2sMaker%20Village!5e0!3m2!1sen!2sin!4v1598797390990!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <!-- Map ends -->
+
+        <!-- Separator -->
+        <div class="vertical-line col-sm-1">
+        </div>
+        <!-- Separator -->
+
+        <!-- FORM -->
+        <div class="col-sm-5">
+            <div class="form-body">
+                <div class="row">
+                    <div class="form-holder">
+                        <div class="form-content">
+                            <div class="form-items">
+                                <h3>Have a query ?</h3>
+                                <p>Contact us now.</p>
+                                <form class="requires-validation" novalidate>
+                                    <div class="col-md-12">
+                                        <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                                        <div class="valid-feedback">Email field is valid!</div>
+                                        <div class="invalid-feedback">Email field cannot be blank!</div>
                                     </div>
-                              
-            
-                                        <div class="form-button mt-3">
-                                            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
-                                        </div>
-                                    </form>
-                                </div>
+                                    <br> 
+                                    <div class="col-md-12">
+                                        <input class="form-control" type="text" placeholder="Question" required>
+                                    </div>
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label">I confirm that all data are correct</label>
+                                    <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                                    </div>
+                                    <div class="form-button mt-3">
+                                        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+        <!-- FORM END -->
     </div>
+</div>
+<!-- CONTACT CONTAINER ENDS-->
+
+<!-- FOOTER BEGINS -->
 <footer class="page-footer">
     <br>
     <center>WEBSITE UNDER CONSTRUCTION</center>
     <br>
     <!-- Copyright 2021- Astrek Innovations, All rights reserved. -->
 </footer>
-<script>
-    $(".show").hide();
+<!-- FOOTER ENDS -->
 
-    function hideSoc(){
-        $(".soc").hide();
-        $(".show").show();
-        $(".hide").hide();
-    };
+<script src="./Assets/js/scripts.js"></script>
 
-    function showSoc(){
-        $(".soc").show();
-        $(".hide").show();
-        $(".show").hide();
-    };
-
-
-</script>
 </body>
 </html>

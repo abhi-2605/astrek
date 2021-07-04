@@ -76,6 +76,14 @@ html {
 	margin-top:22px;
 }
 
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.special-link, .special-link:visited, .special-link:hover, .special-link:active {
+    color: inherit;
+}
+
 @media (max-width: 700px) {
     .pretty-big{
         font-size: 15px ;
@@ -95,6 +103,7 @@ html {
         text-align: left;
         margin: auto;
     }
+
     
 }
 
@@ -145,11 +154,11 @@ html {
 }
 
 .hide{
-    background: rgb(8, 27, 138);
+    background: #212529;
     color:#fff;
 }
 
 .show{
-    background: rgb(8, 27, 138);
+    background: #212529;
     color:#fff;
 }
