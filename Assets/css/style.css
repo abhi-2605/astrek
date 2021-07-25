@@ -11,6 +11,10 @@ html {
     height: 600px;
 }
 
+.contact-form{
+    min-height: 650px;
+}
+
 .image-bg-inner{
     color: rgb(0, 0, 0);
     height: 100%;
