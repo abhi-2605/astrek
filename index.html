@@ -147,6 +147,10 @@
             color: #17192f;
             opacity: 0.5;
         }
+
+        #bottomSoc{
+            display: none;
+        }
         
         @media screen and (max-width: 768px) {
             header h1 {
@@ -176,6 +180,9 @@
                 display: none;
             }
             
+            #bottomSoc{
+                display:block;
+            }
             
         }
         
@@ -472,12 +479,8 @@
     </div>
     <!-- HOME ENDS -->
 
-
-
-
-
     <!-- corousal -->
-
+    
 
 
     <!-- <main>
@@ -503,15 +506,27 @@
 
     <!-- corousal -->
     <br>
+    
+    <nav id='bottomSoc' class="navbar fixed-bottom navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="facebook soc"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter soc"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="google soc"><i class="fa fa-google"></i></a>
+            <a href="#" class="linkedin soc"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube soc"><i class="fa fa-youtube"></i></a>
+            <a href="#" class="youtube soc"><i class="fa fa-youtube"></i></a>
+            <a href="javascript:contactUs()"><h1 id="qnMark" style="color:#fff"><i class="bi bi-question-circle"></i></h1></a>
+        </div>
+    </nav>
 
     <!-- ABOUT STARTS -->
-    <div class="container" id="about">
-        <div class="row">
-            <div class="col-sm-6">
-                <h1>ABOUT</h1>
+    <div class="container" id="about" >
+        <div class="row" >
+            <div class="col-sm-6" >
+                <h1 style="text-align: center; ">ABOUT</h1>
 
                 <br>
-                <p>
+                <p style >
                     Established in 2018, we at Astrek Innovations develop cutting edge solutions to some of our most complex problems - Disability and Rehabilitation. Leveraging our knowledge and expertise in robotics, motion capturing and machine learning, we design devices
                     that would transform the current state-of-the-art in the rehabilitation and assistive technology arena.
                     <br> Our magnum opus is a wearable robotic device, an exoskeleton, that would help people with lower-limb immobility walk again. A culmination of motorised limb braces, motion capturing & tracking; and machine learning; this device

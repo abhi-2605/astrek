@@ -35,6 +35,12 @@ $("#contactBtn").click(function() {
     }, 200);
 });
 
+function contactUs(){
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 200);
+}
+
 $("#queryBtn").click(function() {
     $('html, body').animate({
         scrollTop: $("#contact").offset().top
