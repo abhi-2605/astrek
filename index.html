@@ -10,7 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
@@ -129,10 +128,6 @@
             box-shadow: 0 4px 10px hsl(34 100% 56% / 0.6);
             transition: 0.1s ease-in;
         }
-        /* button:hover {
-  background: #d8932c;
-  box-shadow: 0 4px 10px hsl(34 100% 56% / 0.2);
-} */
         
         form {
             display: flex;
@@ -152,33 +147,6 @@
             color: #17192f;
             opacity: 0.5;
         }
-        /* .design-credits {
-  margin: 20px 0;
-  color: #c4c6e2;
-} */
-        /* .spacer {
-  height: 50px;
-}
-footer {
-  position: absolute;
-  font-size: 12px;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  font-size: 14px;
-  background-color: #f2f2f2;
-  color: #000000;
-  text-align: center;
-} */
-        /* a {
-  text-decoration: none;
-  color: inherit;
-  border-bottom: 1px solid;
-} */
-        /* a:hover {
-  border-bottom: 1px transparent;
-} */
         
         @media screen and (max-width: 768px) {
             header h1 {
@@ -203,6 +171,12 @@ footer {
             .card-sub-title {
                 font-size: 18px;
             }
+            
+            .icon-bar,#queryBtn{
+                display: none;
+            }
+            
+            
         }
         
         .container {
@@ -475,8 +449,7 @@ footer {
                 </div>
                 <div class="carousel-item">
                     <!-- <img class="d-block w-100" src="./Assets/images/carousel-item4.png" alt="Image 4">
-             -->
-                    <div class="image-bg" id="home">
+             -->    <div class="image-bg" id="home">
                         <div class="overlay">
                             <div class="image-bg-inner">
                                 <h1>UnikExo</h1> <br>
@@ -574,20 +547,139 @@ footer {
     <br><br>
 
     <!-- FEATURES CONTAINER AND CAROUSEL -->
-    <div class="container">
+    <div class="container" style="background-color: #000000;">
         <div class="row">
-            <h1>FEATURES</h1>
+            <div class="heading-title text-center">
+                <h3 class="text-uppercase">Features </h3>
+                <p class="p-top-30 half-txt">Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. </p>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <h4>Wearable Robotic <br> Exo-suit</h4>
+                            <p style="color:green"> Actuated at multiple points to provide easy, stable walking experiences</p>
+                        </div>
+                      
+                    </div>
+                </div>
+                <div class="team-title">
+                    <h5 style="text-align: center;">Wearable Robotic Exo-suit</h5>
+                    <center><span>Feature</span> </center>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="https://image.freepik.com/free-photo/elegant-man-with-thumbs-up_1149-1595.jpg" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <h4>Adaptive Gait Pattern</h4>
+                            <p style="color:green">Machine learning algorithms change walking patterns with real-time data analysis</p>
+                        </div>
+                      
+                    </div>
+                </div>
+                <div class="team-title">
+                    <h5 style="text-align: center;">Adaptive Gait Pattern</h5>
+                    <center><span>Feature</span> </center>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <h4>Motion Mapping and Tracking</h4>
+                            <p style="color: green;">Track every movement and visualize for more comprehensive treatment </p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="team-title">
+                    <h5 style="text-align: center;">Motion Mapping and Tracking</h5>
+                    <center><span>Feature</span> </center>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <h4>Adjustable and Modular</h4>
+                            <p style="color: green;">Made to fit everyone; comfortability and features can be added for anyone’s taste </p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="team-title">
+                    <h5 style="text-align: center;">Adjustable and Modular</h5>
+                    <center><span>Feature</span> </center>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <h4>Natural, Precise Walking</h4>
+                            <p style="color: green;">Machine aided walking provides a more natural mimicking of walking patterns with less fatigue </p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="team-title">
+                    <h5 style="text-align: center;">Natural, Precise Walking</h5>
+                    <center><span>Feature</span> </center>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
+                    </div>
+                    <div class="team-hover">
+                        <div class="desk">
+                            <h4>Programmable Therapy Regimes</h4>
+                            <p style="color: green;">Combining expert practical knowledge and robotics, therapy sessions can be controlled and calculated</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="team-title">
+                    <h5 style="text-align: center;">Programmable Therapy Regimes</h5>
+                    <center><span>Feature</span> </center>
+
+                </div>
+            </div>
         </div>
+
     </div>
+
 
     <!-- FEATURES CONTAINER AND CAROUSEL ENDS-->
     <!-- feature -->
     <br><br>
+<br>
 
     <!-- CONTACT CONTAINER -->
-    <div id="contact" class="container">
+    <div id="contact"  class="container">
         <div class="row">
-            <h1>CONTACT US</h1>
+            <h1 style="text-align: center; margin-bottom: 5%;">CONTACT US</h1>
             <br> <br>
             <!-- Map goes here -->
             <div class="col-sm-5">
@@ -619,7 +711,7 @@ footer {
     <!-- 
 TEAM BEGINS -->
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="heading-title text-center">
                 <h3 class="text-uppercase">Our professionals </h3>
@@ -695,7 +787,7 @@ TEAM BEGINS -->
 
         </div>
 
-    </div>
+    </div> -->
 
 
     <!-- Team ends -->
