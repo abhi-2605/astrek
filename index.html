@@ -12,42 +12,28 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
 </head>
 
 <body style="background-color: #323232;">
     <style>
         p,h1,h2,h3,h4,h5,h6{
+            font-family:'Share Tech', sans-serif;
             color:white;
         }
 
-        .square_btn {
-            text-align: center;
-            position: relative;
-            /* width: 100%; */
-            width: 250px;
-            display: block;
-            padding: 0.25em 0.5em;
-            text-decoration: none;
-            color: #FFF;
-            background: rgba(233, 93, 87, 255);
-            border-radius: 4px;
-            box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
-            font-weight: bold;
-            border: solid 2px #d27d00;
-            /* no color change on hover */
-            cursor: pointer;
+        p{
+            font-family:'Share Tech', sans-serif; font-size:large;
         }
-        
-        .square_btn:hover {
-            text-decoration: none;
-            color: inherit;
+
+        #homeBtn,#aboutBtn,#contactBtn{
+            font-family:'Share Tech', sans-serif;
+            font-size:larger;
         }
-        
-        .square_btn:active {
-            /*on Click*/
-            box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
-        }
-        /* call to action */
         
         @import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
         * {
@@ -55,10 +41,6 @@
             margin: 0;
             box-sizing: border-box;
             font-family: "Nunito Sans", sans-serif;
-        }
-        
-        html {
-            position: relative;
         }
         
         main {
@@ -85,32 +67,6 @@
             font-weight: 700;
         }
         
-        .card {
-            background: #fff;
-            max-width: 600px;
-            display: flex;
-            flex-direction: column;
-            padding: 24px;
-            width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 4px 10px #d6d3ee;
-        }
-        
-        .card-title {
-            line-height: 1.5;
-            font-weight: 700;
-            font-size: 34px;
-            text-align: left;
-            color: #17192f;
-            margin: 20px 0 10px 0;
-        }
-        
-        .card-sub-title {
-            font-size: 24px;
-            line-height: 1.5;
-            margin: 10px 0 20px 0;
-        }
-        
         .butt2 {
             height: 65px;
             width: 100%;
@@ -129,24 +85,7 @@
             transition: 0.1s ease-in;
         }
         
-        form {
-            display: flex;
-        }
-        
-        input {
-            min-width: 400px;
-            height: 65px;
-            width: 100%;
-            border-radius: 5px 0 0 5px;
-            background: transparent;
-            border: 1px solid #c4c6e2;
-            padding: 16px;
-            font-weight: normal;
-            font-size: 18px;
-            text-align: left;
-            color: #17192f;
-            opacity: 0.5;
-        }
+
 
         #bottomSoc{
             display: none;
@@ -156,24 +95,9 @@
             header h1 {
                 font-size: 18px;
             }
-            form {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
             button {
                 border-radius: 5px;
                 max-width: 100%;
-            }
-            input {
-                margin-bottom: 20px;
-                min-width: 100%;
-            }
-            .card-title {
-                font-size: 24px;
-            }
-            .card-sub-title {
-                font-size: 18px;
             }
             
             .icon-bar,#queryBtn{
@@ -353,12 +277,11 @@
     <!-- NAVBAR -->
 
 
-    <!-- style="background-color: red" -->
     <!-- bg-dark -->
-    <nav class="navbar navbar-expand-lg navbar-dark  navbar-nav ml-auto" style="background-color: #5ABA47">
+    <nav class="navbar navbar-expand-lg navbar-dark  navbar-nav ml-auto" style="background-color: #5ABA47;">
         <div class="container ">
             <h1 class="logo" style="color: #fff">
-                <img src="./Assets/images/white g-01.png" style="max-width: 250px;" srcset="" alt="Astrek UnikExo">
+                <img src="./Assets/images/white g-01.png" style="max-width: 250px;" srcset="" alt="UniKExo">
             </h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -399,108 +322,31 @@
 
     <!-- HOME -->
 
-
-    <div class="row carouselClass">
-        <!-- CAROUSEL START -->
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <!-- <img class="d-block w-100" src="./Assets/images/carousel-item1.png" alt="Image 1"> -->
-                    <div class="image-bg" id="home">
-                        <div class="overlay">
-                            <div class="image-bg-inner">
-
-                                <strong><h1>UnikExo</h1></strong>
-
-
-                                <br>
-                                <p>Removing the 'Dis' from 'Disabled'</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <!-- <img class="d-block w-100" src="./Assets/images/carousel-item2.png" alt="Image 2"> -->
-                    <div class="image-bg" id="home">
-                        <div class="overlay">
-
-
-
-
-                            <div class="image-bg-inner">
-                                <!-- <h1>UnikExo</h1> <br> -->
-
-                                <a href="#" class="square_btn">Get in Touch </a> <br>
-                                <p>Removing the 'Dis' from 'Disabled'</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <!-- <img class="d-block w-100" src="./Assets/images/carousel-item3.png" alt="Image 3"> -->
-                    <div class="image-bg" id="home">
-                        <div class="overlay">
-                            <div class="image-bg-inner">
-                                <!-- <h1>UnikExo</h1> <br> -->
-
-                                <a href="#" class="square_btn">Contact us </a> <br>
-                                <p>Astrek’s Unik EXO is a fully automated, smart wearable <br></p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="carousel-item">
-                    <!-- <img class="d-block w-100" src="./Assets/images/carousel-item4.png" alt="Image 4">
-             -->    <div class="image-bg" id="home">
-                        <div class="overlay">
-                            <div class="image-bg-inner">
-                                <h1>UnikExo</h1> <br>
-                                <p>Removing the 'Dis' from 'Disabled'</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
         </div>
-        <!-- CAROUSEL END -->
-    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
     <!-- HOME ENDS -->
-
-    <!-- corousal -->
     
 
-
-    <!-- <main>
-    <div class="card">
-     
-      <h3 class="card-title">Get the latest components right into your inbox!</h3>
-   <p class="card-sub-title">Join 4k+ happy subscribers!</p> -->
-    <!-- <div class="form-group">
-        <form method="post">
-          <input type="text" name="useremail-id" id="useremail-id" placeholder="Enter your email">
-          <button class="butt2" type="submit" id="subscribe">
-            Subscribe
-          </button>
-        </form>
-      </div>
-    </div> -->
-
-    <!-- </main> -->
-
-
-
-
-
-    <!-- corousal -->
     <br>
     
     <nav id='bottomSoc' class="navbar fixed-bottom navbar-dark bg-dark">
@@ -521,7 +367,7 @@
                 <h1 style="text-align: center; ">ABOUT</h1>
 
                 <br>
-                <p style >
+                <p>
                     Established in 2018, we at Astrek Innovations develop cutting edge solutions to some of our most complex problems - Disability and Rehabilitation. Leveraging our knowledge and expertise in robotics, motion capturing and machine learning, we design devices
                     that would transform the current state-of-the-art in the rehabilitation and assistive technology arena.
                     <br> Our magnum opus is a wearable robotic device, an exoskeleton, that would help people with lower-limb immobility walk again. A culmination of motorised limb braces, motion capturing & tracking; and machine learning; this device
@@ -557,10 +403,11 @@
     <br><br>
 
     <!-- FEATURES CONTAINER AND CAROUSEL -->
-    <div class="container" style="background-color: #000000;">
+    <div class="container" style="background-color: #000000;"><br><br>
         <div class="row">
             <div class="heading-title text-center">
-                <h3 class="text-uppercase">Features </h3>
+                
+                <h1 class="text-uppercase">Features </h1>
                 <p class="p-top-30 half-txt">Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. </p>
             </div>
 
@@ -682,7 +529,6 @@
 
 
     <!-- FEATURES CONTAINER AND CAROUSEL ENDS-->
-    <!-- feature -->
     <br><br>
 <br>
 
