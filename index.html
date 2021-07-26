@@ -232,6 +232,11 @@
             transition: all 0.3s 0.2s;
             font-size: 35px;
         }
+
+        #row2feature{
+            z-index: -1;
+        }
+
         
         .desk,
         .desk h4,
@@ -287,9 +292,9 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown" style="background-color: #5ABA47">
-            <ul class="navbar-nav ml-auto" style="margin-right: 0;">
-                <li class="nav-item" >
-                    <a class="nav-link active" id="homeBtn" aria-current="page" href="javascript:void(0)">HOME</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active "  id="homeBtn" aria-current="page" href="javascript:void(0)">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="aboutBtn" href="javascript:void(0)">ABOUT</a>
@@ -299,6 +304,16 @@
                 </li>
             </ul>
         </div>
+        <!-- <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Right</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div> -->
     </nav>
     <!-- NAVBAR ENDS-->
 
@@ -322,16 +337,16 @@
 
     <!-- HOME -->
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style='opacity:0.5; z-index: -1;'>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(33).jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -372,8 +387,8 @@
                     that would transform the current state-of-the-art in the rehabilitation and assistive technology arena.
                     <br> Our magnum opus is a wearable robotic device, an exoskeleton, that would help people with lower-limb immobility walk again. A culmination of motorised limb braces, motion capturing & tracking; and machine learning; this device
                     would transform rehabilitation into a precise, immediate treatment protocol.
-                    <br>
-
+                    <br> <br>
+                    <a href="https://startuptalky.com/astrek-innovations-exoskeleton/" target="_blank" rel="noopener noreferrer" style="color:#5ABA47; text-decoration: none;">READ MORE</a>
                 </p>
                 <!-- <p class="pretty-big">
                 Astrek’s Unik EXO is a fully automated, smart wearable robotic suit
@@ -403,18 +418,18 @@
     <br><br>
 
     <!-- FEATURES CONTAINER AND CAROUSEL -->
-    <div class="container" style="background-color: #000000;"><br><br>
+    <div class="container" style="background-color: #000000;" id="row2feature"><br><br>
         <div class="row">
             <div class="heading-title text-center">
                 
                 <h1 class="text-uppercase">Features </h1>
-                <p class="p-top-30 half-txt">Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. </p>
+                <p class="p-top-30 half-txt"> Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. </p>
             </div>
 
             <div class="col-md-4 col-sm-4">
                 <div class="team-member">
                     <div class="team-img">
-                        <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
+                        <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member"  class="img-responsive">
                     </div>
                     <div class="team-hover">
                         <div class="desk">
@@ -450,7 +465,7 @@
             <div class="col-md-4 col-sm-4">
                 <div class="team-member">
                     <div class="team-img">
-                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
+                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive1">
                     </div>
                     <div class="team-hover">
                         <div class="desk">
@@ -469,7 +484,7 @@
             <div class="col-md-4 col-sm-4">
                 <div class="team-member">
                     <div class="team-img">
-                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
+                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg"  alt="team member" class="img-responsive1">
                     </div>
                     <div class="team-hover">
                         <div class="desk">
@@ -488,7 +503,7 @@
             <div class="col-md-4 col-sm-4">
                 <div class="team-member">
                     <div class="team-img">
-                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
+                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg"  alt="team member" class="img-responsive1">
                     </div>
                     <div class="team-hover">
                         <div class="desk">
@@ -507,7 +522,7 @@
             <div class="col-md-4 col-sm-4">
                 <div class="team-member">
                     <div class="team-img">
-                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
+                        <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive1">
                     </div>
                     <div class="team-hover">
                         <div class="desk">
@@ -655,7 +670,7 @@ TEAM BEGINS -->
     <!-- FOOTER BEGINS -->
     <footer class="page-footer">
         <br>
-        <center>WEBSITE UNDER CONSTRUCTION</center>
+        <center style="color: wheat;">WEBSITE UNDER CONSTRUCTION</center>
         <br>
         <!-- Copyright 2021- Astrek Innovations, All rights reserved. -->
     </footer>
