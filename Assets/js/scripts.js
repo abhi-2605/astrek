@@ -29,20 +29,16 @@ $("#homeBtn").click(function() {
     }, 200);
 });
 
-$("#contactBtn").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#contact").offset().top
-    }, 200);
-});
-
 function contactUs(){
     $('html, body').animate({
-        scrollTop: $("#contact").offset().top
+        scrollTop: $("#contactGForm").offset().top
     }, 200);
 }
 
+$("#contactBtn").click(function() {
+    contactUs();
+});
+
 $("#queryBtn").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#contact").offset().top
-    }, 200);
+    contactUs()
 });
