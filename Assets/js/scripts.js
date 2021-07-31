@@ -1,4 +1,5 @@
 $(".show").hide();
+var viewport= $(window).width();
 
 $(".nav-link").on("click", function() {
     $(".nav-link").removeClass("active");
@@ -20,19 +21,28 @@ function showSoc(){
 $("#aboutBtn").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top
-    }, 200);
+    }, 300);
 });
 
 $("#homeBtn").click(function() {
     $('html, body').animate({
-        scrollTop: $("#home").offset().top
-    }, 200);
+        scrollTop: $("html").offset().top
+    }, 300);
+    console.log(viewport);
 });
 
 function contactUs(){
-    $('html, body').animate({
-        scrollTop: $("#contactGForm").offset().top
-    }, 200);
+    if(viewport<=500){
+            $('html, body').animate({
+            scrollTop: $("#contactGForm").offset().top
+        }, 200);
+    }
+    else{
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, 200);
+    }
+    
 }
 
 $("#contactBtn").click(function() {
