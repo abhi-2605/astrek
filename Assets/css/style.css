@@ -6,15 +6,6 @@ html {
     background-color: #323232;
 }
 
-.image-bg{
-    width: 100%;
-    padding: 0%;
-    margin: 0;
-    position: relative;
-    background: url('../images/bg-img.png') no-repeat bottom center/cover;
-    height: 600px;
-}
-
 .contact-form{
     min-height: 650px;
     width: 100%;
@@ -54,7 +45,7 @@ html {
 
 .vertical-line {
     border-right: 6px solid black;
-    height: 500px;
+    height: 350px;
 }
 
 .maps{
@@ -62,11 +53,6 @@ html {
     min-height:100%;
 }
 
-.page-footer{
-    margin-top: 5%;
-    background-color: 6c757d;
-    border-top: 2px solid black;
-}
 
 .float{
 	position:fixed;
@@ -81,10 +67,6 @@ html {
 	box-shadow: 2px 2px 3px #999;
 }
 
-.my-float{
-	margin-top:22px;
-}
-
 a, a:visited, a:hover, a:active {
     color: inherit;
 }
@@ -92,10 +74,6 @@ a, a:visited, a:hover, a:active {
 .special-link, .special-link:visited, .special-link:hover, .special-link:active {
     color: inherit;
 }
-
-/* .carouselClass{
-    padding-left: 0; padding-right: 0; margin-left:0; margin-right:0; width: 100%;
-} */
 
 /*****************************************BREAKPOINT BEGINS******************************************/
 @media (max-width: 700px) {
