@@ -88,6 +88,7 @@
         #bottomSoc{
             display: none;
         }
+
         
         @media screen and (max-width: 768px) {
             header h1 {
@@ -200,6 +201,31 @@
     </a>
     <!-- FLOATING CONTACT BUTTON ENDS-->
 
+    <!-- MODAL -->
+      <div class="modal fade" id="mailingList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="font-family: Share Tech, sans-serif;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #323232;">
+              <h5 class="modal-title" id="exampleModalLabel">Subscribe to updates</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #5ABA47;"></button>
+            </div>
+            <div class="modal-body">
+              <form action="" method="post" style='font-family: Share Tech, sans-serif;'>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="text" class="form-control" placeholder="Email Id" aria-label="mailId" aria-describedby="addon-wrapping">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style='background-color:#323232;font-family: Share Tech, sans-serif;'>CANCEL</button>
+              <button type="button" class="btn btn-primary" style='background-color:#5ABA47;font-family: Share Tech, sans-serif;'>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- MODAL ENDS -->
+
     <!-- HOME -->
 
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style='opacity:0.5; z-index: -1;'>
@@ -254,25 +280,13 @@
                     <br> Our magnum opus is a wearable robotic device, an exoskeleton, that would help people with lower-limb immobility walk again. A culmination of motorised limb braces, motion capturing & tracking; and machine learning; this device
                     would transform rehabilitation into a precise, immediate treatment protocol.
                     <br> <br>
-                    <a href="https://startuptalky.com/astrek-innovations-exoskeleton/" target="_blank" rel="noopener noreferrer" style="color:#5ABA47; text-decoration: none;">READ MORE</a>
+                    <a href="https://startuptalky.com/astrek-innovations-exoskeleton/" target="_blank" rel="noopener noreferrer" style="color:#5ABA47; text-decoration: none;">READ MORE</a> &nbsp; &nbsp;
+                    <!-- MODAL POPUP BUTTON-->
+                      <button type="button" class="btn btn-primary font-weight-bold" data-bs-toggle="modal" data-bs-target="#mailingList" style='background-color:#5ABA47; color: #000;'>
+                        SUBSCRIBE TO UPDATES
+                      </button>
+                    <!-- MODAL POPUP BUTTON-->
                 </p>
-                <!-- <p class="pretty-big">
-                Astrek’s Unik EXO is a fully automated, smart wearable robotic suit
-                designed to assist people ghting lower limb locomotor
-                disabilities. UnikXO provides a safe and secure platform for daily
-                walking assistance in your workplace, homes and even if you want
-                to go grocery shopping or take a stroll in the garden. 
-                <br><br>
-
-                It is also a great tool to help perform your gait therapies and
-                training exercises with multiple modes of operation, patient
-                monitoring systems, comprehensive data visualization system and
-                much more advanced features.
-                <br><br>
-
-                Currently under development, UnikXO would be our showstopper
-                innovation in the near future. Keep an eye out here to know more.
-            </p> -->
             </div>
             <div class="col-sm-6">
                 <img class="img2" width="100%" src="./Assets/images/carousel-item4.png" alt="UnikExo" srcset="">
@@ -343,8 +357,21 @@
           </div>
         </div>
         <br><br>
-        &nbsp;
+        &nbsp; 
+  <div class='container'>
+    <div style='margin-left: 2%; margin-right: 2%;'>
+      <div class='row text-center align-middle'>
+        <!-- MODAL POPUP BUTTON-->
+          <button type="button" class="btn btn-primary font-weight-bold" data-bs-toggle="modal" data-bs-target="#mailingList" style='background-color:#5ABA47; color: #000; font-family:Share Tech, sans-serif; '>
+            SUBSCRIBE TO UPDATES
+          </button>
+        <!-- MODAL POPUP BUTTON-->
+      </div>
+    </div>
+  </div>
+  <br><br>
 </div>
+
 
 
 
@@ -359,12 +386,6 @@
         <div class="row">
             <h1 style="text-align: center; margin-bottom: 5%;">CONTACT US</h1>
             <br> <br>
-            <!-- Map goes here -->
-            <!-- <div class="col-sm-5">
-                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.529897019841!2d76.3522350147946!3d10.055595792813042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c04d1fa5823%3A0x89ec69fb9b959600!2sMaker%20Village!5e0!3m2!1sen!2sin!4v1598797390990!5m2!1sen!2sin"
-                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div> -->
-            <!-- Map ends -->
             <div class="col-sm-5">
                 <h2 style='color:#5ABA47'>Get in Touch with us</h2>
                 <p>
@@ -380,13 +401,12 @@
 
 
             <!-- Separator -->
-            <!-- <div class="vertical-line col-sm-1">
-            </div> -->
             <div class='col-sm-1'></div>
             <!-- Separator -->
 
             <!-- FORM -->
             <div id='contactGForm' class="col-sm-5">
+              <form action="" method="post">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label" style='color:#fff'>Email address</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -398,11 +418,35 @@
                   <div class="col-auto">
                     <button type="submit" class="btn btn-primary mb-3" style='background-color:#5ABA47;'>Submit</button>
                   </div>
+              </form>
             </div>
             <!-- FORM END -->
         </div>
         <br><br><br>
     </div>
+
+    <!-- <div class="container">
+      <div class="row">
+          <h1 style="text-align: center; margin-bottom: 5%;">CONTACT US</h1>
+          <br> <br>
+          <!-- Map goes here -->
+          <!-- <div class="col-sm-5">
+              <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.529897019841!2d76.3522350147946!3d10.055595792813042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c04d1fa5823%3A0x89ec69fb9b959600!2sMaker%20Village!5e0!3m2!1sen!2sin!4v1598797390990!5m2!1sen!2sin"
+                  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div> -->
+
+          <!-- Separator -->
+          <!-- <div class='col-sm-1'>
+          </div> -->
+          <!-- Separator -->
+
+          <!-- <div class="col-sm-5">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeDKfrq7fO7TXXyHTtA9a_lzDABfBe3vchgHaH5FTy9cqVBwg/viewform?embedded=true" width="500" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div> -->
+          <!-- FORM END -->
+      <!-- </div> -->
+      <br><br><br>
+  </div> -->
     <!-- CONTACT CONTAINER ENDS-->
 
 
@@ -410,7 +454,7 @@
     <!-- FOOTER BEGINS -->
     <footer class="page-footer" style='background-color:#000000'>
         <br>
-        <h5 style="color: #fff; text-align: center;">2021 © All rights reserved. Astrek Innovations</h5>
+        <h5 style="color: #fff; text-align: center;">2021 © All rights reserved. <a href="https://astrekinnovations.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color:#5ABA47">Astrek Innovations</a></h5>
         <br>
         <!-- Copyright 2021- Astrek Innovations, All rights reserved. -->
     </footer>

@@ -2,8 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
-.body{
+.body,form,button{
     background-color: #323232;
+    font-family:'Share Tech', sans-serif;
 }
 
 .contact-form{
@@ -75,6 +76,7 @@ a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
+
 /*****************************************BREAKPOINT BEGINS******************************************/
 @media (max-width: 700px) {
     .pretty-big{
@@ -84,9 +86,8 @@ a, a:visited, a:hover, a:active {
     .maps{
         height:500px;
     }
-    .vertical-line {
-        border: 0px;
-        height: 0;
+    footer{
+        padding-bottom:10%;
     }
 }
 /*****************************************BREAKPOINT ENDS****************************************/
